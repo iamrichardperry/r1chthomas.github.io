@@ -81,13 +81,13 @@ label {
   cursor: pointer; }
 
 .btn-primary {
-  background: #FF5A5F;
+  background: #d51226;
   color: #fff;
   border: none;
   -webkit-transition: all ease-in 0.1s;
           transition: all ease-in 0.1s; }
   .btn-primary:active {
-    background: #FF5A5F;
+    background: #d51226;
     color: #fff; }
   .btn-primary:hover {
     background: #999;
@@ -95,7 +95,7 @@ label {
     -webkit-transition: all ease-in 0.1s;
             transition: all ease-in 0.1s; }
   .btn-primary:focus {
-    background: #FF5A5F;
+    background: #d51226;
     color: #fff; }
 
 .video-bg {
@@ -143,10 +143,10 @@ label {
       padding-top: 10px; }
     #overlay #links a:focus,
     #overlay #links a:hover {
-      color: #FF5A5F;
+      color: #d51226;
       text-decoration: none; }
     #overlay #links #users {
-      border: 2px solid #FF5A5F;
+      border: 2px solid #d51226;
       margin-right: 10px; }
       #overlay #links #users a {
         font-size: 1.1em; }
@@ -198,7 +198,7 @@ label {
       font-size: 1.5em; }
     #overlay #messagebox .btn-primary {
       background: transparent;
-      border: 2px solid #FF5A5F;
+      border: 2px solid #d51226;
       font-size: 18px; }
       @media (max-width: 767px) {
         #overlay #messagebox .btn-primary {
@@ -240,7 +240,7 @@ label {
       font-size: 1.4em; } }
 #overview .linespacer {
   width: 200px;
-  border-top: 2px solid #FF5A5F;
+  border-top: 2px solid #d51226;
   margin: 20px auto 60px; }
   @media (max-width: 767px) {
     #overview .linespacer {
@@ -260,7 +260,7 @@ label {
     -webkit-transition: all ease 0.1s;
             transition: all ease 0.1s; }
   #footer i:hover {
-    color: #FF5A5F;
+    color: #d51226;
     -webkit-transition: all ease 0.1s;
             transition: all ease 0.1s; }
   #footer h4 {
@@ -283,7 +283,7 @@ label {
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s; }
   #sidebar-wrapper i:hover {
-    color: #FF5A5F; }
+    color: #d51226; }
 
 .sidebar-nav {
   position: absolute;
@@ -306,7 +306,7 @@ label {
     font-size: 18px;
     line-height: 55px; }
     .sidebar-nav .sidebar-brand a {
-      color: #FF5A5F; }
+      color: #d51226; }
       .sidebar-nav .sidebar-brand a:hover {
         color: #fff;
         background: none; }
