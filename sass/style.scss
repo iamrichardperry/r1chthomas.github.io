@@ -1,0 +1,516 @@
+@import url( 'https://fonts.googleapis.com/css?family=Lato:400,700');
+// Variables
+$red: #FF5A5F;
+$white: #fff;
+$lightgray: #999;
+$darkgray: #333;
+$font: 'Lato', sans-serif;
+$overlay: rgba(0,0,0,0.6);
+// Mix-ins
+@mixin relativeFull($position,$width,$height) {
+    position: $position;
+    width: $width;
+    height: $height;
+}
+@mixin absoluteFull($position,$width,$height) {
+    position: $position;
+    width: $width;
+    height: $height;
+}
+@mixin browserPrefix($x,$y) {
+    -webkit-transform: translate($x,$y);
+    -moz-transform: translate($x,$y);
+    -ms-transform: translate($x,$y);
+    transform: translate($x,$y);
+}
+@mixin flexbox($flex,$align,$justify,$direction) {
+    display: $flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+// General Global Styles
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+body,
+html {
+    font-family: $font;
+    height: 100%;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2.2em;
+}
+
+p {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    @media(max-width: 767px) {
+        font-size: 16px;
+    }
+}
+/* Spacing & Alignment Helpers */
+.text-center {
+    text-align: center;
+}
+
+.rowspacing {
+    padding: 80px 0;
+}
+// Provides vertical spacing when elements become stacked
+// on small devices.
+@media(max-width: 767px) {
+    .sm-dev-spacing {
+        padding-top: 80px;
+    }
+}
+/* Global Generic Styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+    cursor: pointer;
+    transition: all ease-in 0.1s;
+
+    &:hover {
+        text-decoration: none;
+        color: $lightgray;
+        transition: all ease-in 0.1s;
+    }
+}
+
+span {
+    font-size: 1.8em;
+    margin-top: 20px;
+}
+
+input {
+    width: 100%;
+    border: 1px solid #ddd;
+    height: 35px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-top: 5px;
+}
+// Buttons & Spacing
+
+.btn {
+    margin-top: 10px;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: $red;
+    color: $white;
+    border: none;
+    transition: all ease-in 0.1s;
+
+    &:active {
+        background: $red;
+        color: #fff;
+    }
+
+    &:hover {
+        background: $lightgray;
+        color: $white;
+        transition: all ease-in 0.1s;
+    }
+
+    &:focus {
+        background: $red;
+        color: #fff;
+    }
+}
+// Video Hero
+
+.video-bg {
+    @include relativeFull(relative,100%,100%);
+    overflow: hidden;
+}
+
+.video-bg_video {
+    @include absoluteFull(absolute,auto,auto);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
+// Overlay
+
+#overlay {
+    z-index: 999;
+    color: $white;
+    height: 100%;
+    width: 100%;
+    background: $overlay;
+    // Navigation Menu
+    #logoTop {
+        float: left;
+        // Screen less than 550px
+        @media(max-width: 767px) {
+            padding-left: 15px;
+            padding-top: 18px;
+
+            #logo {
+                font-size: 18px;
+            }
+        }
+        // Screen larger than 768px
+        @media(min-width: 768px) {
+            padding: 21px 0 0 40px;
+
+            #logo {
+                font-size: 26px;
+            }
+        }
+    }
+
+    #links {
+        float: right;
+        padding: 19px 20px 0 0;
+
+        li,
+        ul {
+            display: inline-block;
+            padding: 5px 10px;
+        }
+
+        a {
+            font-size: 1.1em;
+            padding-top: 10px;
+        }
+
+        a:focus,
+        a:hover {
+            color: $red;
+            text-decoration: none;
+        }
+
+        #users {
+            border: 2px solid $red;
+            margin-right: 10px;
+
+            a {
+                font-size: 1.1em;
+            }
+        }
+    }
+    // Hide navigation menu when screen is < 768px.
+    @media(max-width: 767px) {
+        #links {
+            display: none;
+        }
+    }
+    // Video Hero Text
+    #messagebox {
+        @include flexbox(flex,center,center,column);
+        width: 100%;
+        height: 100%;
+
+        h1 {
+            font-size: 4.2em;
+            font-weight: 700;
+            margin-top: -130px;
+        }
+
+        h2 {
+            font-size: 2em;
+            font-weight: 400;
+            margin-top: -10px;
+        }
+        @media(max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+                font-weight: 700;
+                margin-top: -40px;
+            }
+
+            h2 {
+                font-size: 1.2em;
+                font-weight: 400;
+                margin-top: -5px;
+                padding: 0 5px;
+            }
+        }
+
+        .btn {
+            margin-top: 15px;
+        }
+
+        .btn-lg {
+            padding: 12px 18px;
+            font-size: 1.5em;
+        }
+
+        .btn-primary {
+            background: transparent;
+            border: 2px solid $red;
+            font-size: 18px;
+            @media(max-width: 767px) {
+                font-size: 16px;
+                padding: 8px 14px;
+                margin-top: 10px;
+            }
+
+            &:focus {
+                color: #fff;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .video-bg {
+        background: url('../img/mobile-hero.jpg') center center / cover no-repeat;
+    }
+
+    .video-bg_video {
+        display: none;
+    }
+
+    #overlay {
+        z-index: 999;
+        color: $white;
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,0.4);
+    }
+}
+// Overview Section
+
+#overview {
+    h2 {
+        font-size: 3em;
+        @media(max-width: 767px) {
+            font-size: 2em;
+        }
+    }
+
+    h3 {
+        font-size: 2em;
+        @media(max-width: 767px) {
+            font-size: 1.8em;
+        }
+    }
+
+    .subheader {
+        color: $lightgray;
+        font-size: 1.4em;
+        font-weight: 400;
+        @media(max-width: 767px) {
+            font-size: 1.4em;
+        }
+    }
+
+    .linespacer {
+        width: 200px;
+        border-top: 2px solid $red;
+        margin: 20px auto 60px;
+        @media(max-width: 767px) {
+            font-size: 2em;
+        }
+    }
+
+    img {
+        padding: 20px 0 10px;
+    }
+
+    .btn {
+        margin-top: 5px;
+        box-shadow: 4px 4px 10px #888888;
+    }
+}
+
+#footer {
+    background: $darkgray;
+    color: $white;
+
+    i {
+        padding-right: 2px;
+        cursor: pointer;
+        transition: all ease 0.1s;
+    }
+
+    i:hover {
+        color: $red;
+        transition: all ease 0.1s;
+    }
+
+    h4 {
+        font-size: 1.4em;
+    }
+}
+// Mobile Menu
+@media(min-width: 768px) {
+    #mobile-nav {
+        display: none;
+    }
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    transform: translateX(250px);
+    overflow-y: auto;
+    background: #fff;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+
+    i:hover {
+        color: $red;
+    }
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        text-indent: 20px;
+        line-height: 40px;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: $darkgray;
+
+        &:hover {
+            color: $lightgray;
+        }
+    }
+
+    .sidebar-brand {
+        height: 55px;
+        font-size: 18px;
+        line-height: 55px;
+
+        a {
+            color: $red;
+
+            &:hover {
+                color: #fff;
+                background: none;
+            }
+        }
+    }
+}
+// Nav Toggle
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+// Popup Modal
+
+.popup {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 999;
+
+    #login {
+        margin-bottom: 60px;
+    }
+}
+
+.popup-inner {
+    max-width: 700px;
+    height: 90%;
+    width: 90%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 6px rgba(0,0,0,1);
+    border-radius: 3px;
+    background: $white;
+}
+/* Close Button */
+.popup-close {
+    width: 30px;
+    height: 30px;
+    padding-top: 4px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: ease 0.25s all;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    border-radius: 1000px;
+    background: rgba(0,0,0,0.8);
+    font-family: $font;
+    font-size: 20px;
+    text-align: center;
+    line-height: 100%;
+    color: $white;
+    transition: all ease 0.4s;
+}
+
+.popup-close:hover {
+    -webkit-transform: translate(50%, -50%) rotate(180deg);
+    transform: translate(50%, -50%) rotate(180deg);
+    text-decoration: none;
+    color: #fff;
+    transition: all ease 0.4s;
+}
