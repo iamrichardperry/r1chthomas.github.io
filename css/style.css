@@ -119,7 +119,7 @@ iframe.video-bg_video {
   color: #fff;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.6); }
+  background: rgba(black, 0.6); }
   #overlay #logoTop {
     float: left; }
     @media (max-width: 767px) {
