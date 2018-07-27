@@ -127,18 +127,18 @@ label {
     float: left; }
     @media (max-width: 767px) {
       #overlay #logoTop {
-        padding-left: 15px;
+        padding-left: 35px;
         padding-top: 18px; }
         #overlay #logoTop #logo {
           font-size: 18px; } }
     @media (min-width: 768px) {
       #overlay #logoTop {
-        padding: 21px 0 0 40px; }
+        padding: 41px 0 0 40px; }
         #overlay #logoTop #logo {
           font-size: 26px; } }
   #overlay #links {
     float: right;
-    padding: 19px 20px 0 0; }
+    padding: 39px 20px 0 0; }
     #overlay #links li,
     #overlay #links ul {
       display: inline-block;
