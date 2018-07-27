@@ -105,14 +105,13 @@ label {
   overflow: hidden; }
   
   iframe {
-  position: absolute;
-  width: auto;
-  height: auto;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -100; }
+ display: block; 
+ width: 100%; 
+ border: none; 
+ overflow-y: auto; 
+	  overflow-x: hidden;}
 
-iframe.video-bg_video {
+.video-bg_video {
   position: absolute;
   width: auto;
   height: auto;
@@ -223,7 +222,7 @@ iframe.video-bg_video {
   .video-bg {
     background: url("https://raw.githubusercontent.com/r1chthomas/r1chthomas.github.io/master/img/ubm-mobile-hero.png") center center/cover no-repeat; }
 
-  iframe.video-bg_video {
+  .video-bg_video {
     display: none; }
 
   #overlay {
