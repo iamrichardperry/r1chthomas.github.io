@@ -222,7 +222,7 @@ iframe.video-bg_video {
     color: #fff;
     height: 100%;
     width: 100%;
-    background: rgba(black, 0.4); } }
+    background-color: #000000; } }
 #overview h2 {
   font-size: 3em; }
   @media (max-width: 767px) {
