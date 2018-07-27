@@ -104,13 +104,15 @@ label {
   height: 100%;
   overflow: hidden; }
 
-.video-bg_video {
+iframe.video-bg_video {
   position: absolute;
   width: auto;
   height: auto;
   min-width: 100%;
   min-height: 100%;
   z-index: -100; }
+
+
 
 #overlay {
   z-index: 999;
