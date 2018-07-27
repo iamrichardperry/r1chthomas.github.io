@@ -104,12 +104,7 @@ label {
   height: 100%;
   overflow: hidden; }
   
-  iframe {
- display: block; 
- width: 100%; 
- border: none; 
- overflow-y: auto; 
-	  overflow-x: hidden;}
+
 
 .video-bg_video {
   position: absolute;
@@ -126,7 +121,7 @@ label {
   color: #000000;
   height: 100%;
   width: 100%;
-  background: rgba(229, 229, 229, 0.01); }
+  background: rgba(0, 0, 0, 0.01); }
   
   #overlay #logoTop {
     float: left; }
@@ -230,7 +225,7 @@ label {
     color: #000000;
     height: 100%;
     width: 100%;
-    background: rgba(229, 229, 229, 0.01); } }
+    background: rgba(0, 0, 0, 0.01); } }
 	
 #overview h2 {
   font-size: 3em; }
@@ -344,7 +339,7 @@ label {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(229, 229, 229, 0.01);
+  background: rgba(0, 0, 0, 0.01);
   z-index: 999; }
   .popup #login {
     margin-bottom: 60px; }
@@ -379,7 +374,7 @@ label {
   -ms-transform: translate(50%, -50%);
       transform: translate(50%, -50%);
   border-radius: 1000px;
-  background: rgba(229, 229, 229, 0.01);
+  background: rgba(0, 0, 0, 0.01);
   font-family: "Lato", sans-serif;
   font-size: 20px;
   text-align: center;
