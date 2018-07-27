@@ -100,7 +100,7 @@ label {
 
 .video-bg {
   position: relative;
-  width: 100%;
+  max-width: 2000px;
   height: 100%;
   overflow: hidden; }
   
@@ -110,7 +110,7 @@ label {
   position: absolute;
   width: auto;
   height: auto;
-  min-width: 100%;
+  max-width: 2000px;
   min-height: 100%;
   z-index: -100; }
 
