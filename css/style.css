@@ -214,7 +214,7 @@ iframe.video-bg_video {
   .video-bg {
     background: url("https://raw.githubusercontent.com/r1chthomas/r1chthomas.github.io/master/img/ubm-mobile-hero.png") center center/cover no-repeat; }
 
-  .video-bg_video {
+  iframe.video-bg_video {
     display: none; }
 
   #overlay {
