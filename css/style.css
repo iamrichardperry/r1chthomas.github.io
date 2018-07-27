@@ -90,7 +90,7 @@ label {
     background: #d51226;
     color: #fff; }
   .btn-primary:hover {
-    background: #999;
+    background: #000000;
     color: #fff;
     -webkit-transition: all ease-in 0.1s;
             transition: all ease-in 0.1s; }
@@ -234,7 +234,7 @@ iframe.video-bg_video {
     #overview h3 {
       font-size: 1.8em; } }
 #overview .subheader {
-  color: #999;
+  color: #000000;
   font-size: 1.4em;
   font-weight: 400; }
   @media (max-width: 767px) {
@@ -302,7 +302,7 @@ iframe.video-bg_video {
     text-decoration: none;
     color: #333; }
     .sidebar-nav a:hover {
-      color: #999; }
+      color: #000000; }
   .sidebar-nav .sidebar-brand {
     height: 55px;
     font-size: 18px;
