@@ -124,10 +124,11 @@ iframe.video-bg_video {
 
 #overlay {
   z-index: 999;
-  color: #fff;
+  color: #000000;
   height: 100%;
   width: 100%;
   background: rgba(229, 229, 229, 0.01); }
+  
   #overlay #logoTop {
     float: left; }
     @media (max-width: 767px) {
@@ -227,10 +228,11 @@ iframe.video-bg_video {
 
   #overlay {
     z-index: 999;
-    color: #fff;
+    color: #000000;
     height: 100%;
     width: 100%;
     background: rgba(229, 229, 229, 0.01); } }
+	
 #overview h2 {
   font-size: 3em; }
   @media (max-width: 767px) {
