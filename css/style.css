@@ -127,7 +127,7 @@ label {
     float: left; }
     @media (max-width: 767px) {
       #overlay #logoTop {
-        padding-left: 35px;
+        padding-left: 55px;
         padding-top: 18px; }
         #overlay #logoTop #logo {
           font-size: 18px; } }
